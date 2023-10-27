@@ -17,7 +17,7 @@ class ListArray : public List<T> {
         
         delete arr;
         
-        arr= new int [new size];
+        arr= new int [new_size];
         for (int i=0; i< new_size;i++)
           arr[i]=aux[i];
           max= new_size;
@@ -38,7 +38,7 @@ class ListArray : public List<T> {
         
        T operator[](int pos){
             if (pos > n || pos < 0){
-                    throw std::out_of_range("Numero mayor que el rango del array);
+                    throw std::out_of_range("Numero mayor que el rango del array");
             }
             else
             return arr [pos];
@@ -136,5 +136,5 @@ class ListArray : public List<T> {
            
     
 
-};
+
 
